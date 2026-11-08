@@ -1,7 +1,8 @@
 import { Models } from "node-appwrite";
 
 export type ExecutorPayload = {
-    brandControllerAction: string;
+    endpoint: string;
+    fetchInit: RequestInit;
 };
 
 export type ExecutorOptions = {
