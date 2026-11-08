@@ -1,0 +1,11 @@
+{
+    "name": "tripmate-types",
+    "type": "module",
+    "version": "0.0.1",
+    "private": true,
+    "description": "Tripmate types",
+    "types": "src/types.d.ts",
+    "dependencies": {
+        "node-appwrite": "^17.2.0"
+    }
+}
