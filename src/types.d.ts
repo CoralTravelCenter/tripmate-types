@@ -1,12 +1,13 @@
 import { Models } from "node-appwrite";
 
+export type ExecutorOptions = {
+
+};
+
 export type ExecutorPayload = {
     endpoint: string;
     fetchInit: RequestInit;
-};
-
-export type ExecutorOptions = {
-
+    options?: ExecutorOptions;
 };
 
 export type ExecutorStatus = 'pending' | 'running' | 'success' | 'failed' | 'timeout';
