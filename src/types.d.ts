@@ -10,7 +10,12 @@ export type ExecutorPayload = {
     options?: ExecutorOptions;
 };
 
-export type ExecutorStatus = 'pending' | 'running' | 'success' | 'failed' | 'timeout';
+export const ExecutorProgressStatuses = ['pending', 'running'] as const;
+export const ExecutorFinishedStatuses = ['success', 'failed', 'timeout'] as const;
+export type ExecutorProgressStatus = typeof ExecutorProgressStatuses[number];
+export type ExecutorFinishedStatus = typeof ExecutorFinishedStatuses[number];
+
+export type ExecutorStatus = ExecutorProgressStatus | ExecutorFinishedStatus;
 
 export type ExecutorExchangeFields = {
     status: ExecutorStatus;
