@@ -14,7 +14,7 @@ export type ExecutorStatus = 'pending' | 'running' | 'success' | 'failed' | 'tim
 
 export type ExecutorExchangeFields = {
     status: ExecutorStatus;
-    result: string;
+    result?: string;
     duration?: number;
     retries?: number;
 };
