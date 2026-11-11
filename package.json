@@ -8,7 +8,7 @@
     "module": "./src/types.ts",
     "types": "./src/types.ts",
     "exports": {
-        ".": "./src/index.ts"
+        ".": "./src/types.ts"
     },
     "dependencies": {
         "node-appwrite": "^17.2.0"

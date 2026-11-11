@@ -1,4 +1,4 @@
-import { Models } from "node-appwrite";
+import type { Models } from "node-appwrite";
 
 export type ExecutorExchangeFields = {
     status: ExecutorStatus;
