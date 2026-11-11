@@ -4,7 +4,12 @@
     "version": "0.0.1",
     "private": true,
     "description": "Tripmate types",
-    "types": "src/types.d.ts",
+    "main": "./src/types.ts",
+    "module": "./src/types.ts",
+    "types": "./src/types.ts",
+    "exports": {
+        ".": "./src/index.ts"
+    },
     "dependencies": {
         "node-appwrite": "^17.2.0"
     },

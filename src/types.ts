@@ -25,5 +25,5 @@ export const ExecutorFinishedStatuses = ['success', 'failed', 'timeout'] as cons
 export type ExecutorProgressStatus = typeof ExecutorProgressStatuses[number];
 export type ExecutorFinishedStatus = typeof ExecutorFinishedStatuses[number];
 
-export type ExecutorStatus = ExecutorProgressStatus & ExecutorFinishedStatus;
+export type ExecutorStatus = ExecutorProgressStatus | ExecutorFinishedStatus;
 
