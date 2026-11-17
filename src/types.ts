@@ -10,7 +10,8 @@ export type ExecutorExchangeFields = {
 export type ExecutorExchangeDoc = Models.Document & ExecutorExchangeFields;
 
 export type ExecutorOptions = {
-
+    executionTimeLimit?: number;
+    retry?: number;
 };
 
 export type ExecutorPayload = {
