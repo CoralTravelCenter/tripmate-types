@@ -17,6 +17,7 @@ export type ExecutorPayload = {
     endpoint: string;
     exchangeDocId: ExecutorExchangeDoc['$id'];
     fetchInit: RequestInit;
+    fetchBody?: any;
     options?: ExecutorOptions;
 };
 
