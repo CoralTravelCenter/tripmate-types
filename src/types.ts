@@ -22,6 +22,14 @@ export type ExecutorPayload = {
     options?: ExecutorOptions;
 };
 
+export type ExecutorHttpError = Error & {
+    cause: {
+        status: number;
+        statusText: string;
+        responseBody: string;
+    }
+}
+
 export const ExecutorProgressStatuses = ['pending', 'running'] as const;
 export const ExecutorFinishedStatuses = ['success', 'failed', 'timeout'] as const;
 export type ExecutorProgressStatus = typeof ExecutorProgressStatuses[number];
